@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Email Title</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--[if mso]>
+      <style type="text/css">
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body,
+        table,
+        td {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        .bodyHeader {
+          color: white !important;
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: bold !important;
+          font-size: 38px !important;
+        }
+
+        .bodyText {
+          color: white !important;
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 19px !important;
+        }
+
+        .cardHeader {
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 21px !important;
+        }
+
+        .cardText {
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 17px !important;
+        }
+
+        .footerLinks {
+          color: white !important;
+          font-size: 11px !important;
+          line-height: 2 !important;
+        }
+
+        .footerLink {
+          color: white !important;
+          font-size: 11px !important;
+          line-height: 2 !important;
+        }
+
+        .footerText {
+          color: white !important;
+          font-size: 11px !important;
+          line-height: 2 !important;
+        }
+
+        .unsub {
+          color: white !important;
+          font-size: 11px !important;
+        }
+
+        @media screen and (max-width: 600px) {
+          .mobilefullwidth {
+            width: 100% !important;
+            height: auto !important;
+          }
+
+          .mobile95width {
+            width: 95% !important;
+            height: auto !important;
+          }
+
+          .mobile90width {
+            width: 90% !important;
+            height: auto !important;
+          }
+
+          .mobileLogo {
+            width: 50% !important;
+          }
+
+          .bodyHeader {
+            color: white !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-weight: bold !important;
+            font-size: 38px !important;
+          }
+
+          .bodyText {
+            color: white !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-weight: normal !important;
+            font-size: 21px !important;
+          }
+
+          .cardHeader {
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-weight: normal !important;
+            font-size: 21px !important;
+          }
+
+          .cardText {
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-weight: normal !important;
+            font-size: 17px !important;
+          }
+
+          .footerLinks {
+            color: white !important;
+            font-size: 11px !important;
+            line-height: 2 !important;
+          }
+
+          .footerLink {
+            color: white !important;
+            font-size: 11px !important;
+            line-height: 2 !important;
+          }
+
+          .footerText {
+            color: white !important;
+            font-size: 11px !important;
+            line-height: 2 !important;
+          }
+
+          .unsub {
+            color: white !important;
+            font-size: 11px !important;
+          }
+        }
+      </style>
+    <![endif]-->
+
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+      /* Outlook link fix */
+      #outlook a {
+        padding: 0;
+      }
+
+      /* Hotmail background & line height fixes */
+      .ExternalClass {
+        width: 100% !important;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+
+      /* Image borders & formatting */
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      a img {
+        border: none;
+      }
+
+      /* Re-style iPhone automatic links (eg. phone numbers) */
+      .appleLinksGrey a {
+        color: #919191 !important;
+        text-decoration: none !important;
+      }
+
+      /* Hotmail symbol fix for mobile devices */
+      .ExternalClass img[class^="Emoji"] {
+        width: 10px !important;
+        height: 10px !important;
+        display: inline !important;
+      }
+
+      /* ============= */
+
+      .bodyHeader {
+        color: white !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: bold !important;
+        font-size: 38px !important;
+      }
+
+      .bodyText {
+        color: white !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: normal !important;
+        font-size: 19px !important;
+      }
+
+      .cardHeader {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: normal !important;
+        font-size: 21px !important;
+      }
+
+      .cardText {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: normal !important;
+        font-size: 17px !important;
+      }
+
+      .footerLinks {
+        color: white !important;
+        font-size: 11px !important;
+        /* line-height: 2 !important; */
+      }
+
+      .footerLink {
+        color: white !important;
+        font-size: 11px !important;
+        line-height: 2 !important;
+      }
+
+      .footerText {
+        color: white !important;
+        font-size: 11px !important;
+        /* line-height: 2 !important; */
+      }
+
+      .unsub {
+        color: white !important;
+        font-size: 11px !important;
+      }
+
+      @media screen and (max-width: 600px) {
+        .mobilefullwidth {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .mobile95width {
+          width: 95% !important;
+          height: auto !important;
+        }
+
+        .mobile90width {
+          width: 90% !important;
+          height: auto !important;
+        }
+
+        .mobileLogo {
+          width: 50% !important;
+        }
+
+        .bodyHeader {
+          color: white !important;
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: bold !important;
+          font-size: 38px !important;
+        }
+
+        .bodyText {
+          color: white !important;
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 21px !important;
+        }
+
+        .cardHeader {
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 21px !important;
+        }
+
+        .cardText {
+          font-family: Arial, Helvetica, sans-serif !important;
+          font-weight: normal !important;
+          font-size: 17px !important;
+        }
+
+        .footerLinks {
+          color: white !important;
+          font-size: 11px !important;
+          /* line-height: 2 !important; */
+        }
+
+        .footerLink {
+          color: white !important;
+          font-size: 11px !important;
+          line-height: 2 !important;
+        }
+
+        .footerText {
+          color: white !important;
+          font-size: 11px !important;
+          /* line-height: 2 !important; */
+        }
+
+        .unsub {
+          color: white !important;
+          font-size: 11px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="top">
+          <!-- Start of Content -->
+          <table width="600" class="mobilefullwidth" border="0" cellspacing="0" cellpadding="0" style="background-color: #db0714">
+            <!-- Spacer Start -->
+            <tr>
+              <td height="80" style="line-height: 80px; font-size: 80px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+            </tr>
+            <!-- Spacer End -->
+            <!-- Start of header containing row -->
+            <tr>
+              <td align="center" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Start of header content -->
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="300" class="mobileLogo" src="https://i.ibb.co/Jyy16BH/SKY-LFC.png" alt="SKY-LFC" border="0" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End of header content -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of header containing row -->
+            <!-- Spacer Start -->
+            <tr>
+              <td height="30" style="line-height: 30px; font-size: 30px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+            </tr>
+            <!-- Spacer End -->
+            <!-- Start of hero containing row -->
+            <tr>
+              <td align="center" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Start of hero content -->
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"
+                              ><img width="540" class="mobile90width" src="https://i.ibb.co/DC3Mdxh/Offtothe-Match-titles.png" alt="Offtothe-Match-titles" border="0" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End of hero content -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of hero containing row -->
+            <!-- Spacer Start -->
+            <tr>
+              <td height="30" style="line-height: 30px; font-size: 30px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+            </tr>
+            <!-- Spacer End -->
+            <!-- Start of body containing row -->
+            <tr>
+              <td align="center" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Start of body content -->
+                      <table width="100%" class="mobile90width" border="0" cellspacing="0" cellpadding="0">
+                        <!-- H1 row Start -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <h1 class="bodyHeader">OFF TO THE MATCH WE GO</h1>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- H1 row End -->
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <!-- Start of body text row -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="450" class="mobile95width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p>
+                                    <span class="bodyText"
+                                      >LFCTV reflects on 17 months without a full crowd at Anfield, as staunch fans share their experiences of the COVID pandemic, explaining how much they've missed
+                                      their precious matchday routines.</span
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- Spacer Start -->
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <!-- Start of customer name -->
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p>
+                                    <span class="bodyText">Hello <span>&lt;</span>Name<span>&gt;</span>,</span>
+                                  </p>
+                                </td>
+                              </tr>
+                              <!-- End of customer name -->
+                              <!-- Spacer Start -->
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p>
+                                    <span class="bodyText"> Watch over 50 live games on LFCTV each year, including Academy, Women, Legends, Pre-Season. Over 26 hours of new programming a week. </span>
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- End of body text row -->
+                      </table>
+                      <!-- End of body content -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of body containing row -->
+            <!-- Spacer Start -->
+            <tr>
+              <td height="30" style="line-height: 30px; font-size: 30px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+            </tr>
+            <!-- Spacer End -->
+            <!-- Start of card section containing row -->
+            <tr>
+              <td align="center" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <!-- Start of card -->
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="90%" border="0" cellspacing="0" cellpadding="0" style="background-color: white">
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="100%" src="https://i.ibb.co/LSbzFF1/preview-show-image.png" alt="preview-show-image" border="0" /></a>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="15" style="line-height: 15px; font-size: 15px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="85%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <h1 class="cardHeader">WEEKLY SHOWS</h1>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="80%" class="mobile90width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p><span class="cardText">All the very latest daily news and interviews, direct from the Club. </span></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="50%" src="https://i.ibb.co/TWJhRZw/button.png" alt="button" border="0" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of card -->
+                  <!-- Spacer Start -->
+                  <tr>
+                    <td height="15" style="line-height: 15px; font-size: 15px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                  </tr>
+                  <!-- Spacer End -->
+                  <!-- Start of card -->
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="90%" border="0" cellspacing="0" cellpadding="0" style="background-color: white">
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="100%" src="https://i.ibb.co/jGNdxZv/full-match-replay-image.png" alt="full-match-replay-image" border="0" /> </a>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="15" style="line-height: 15px; font-size: 15px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="85%" class="mobile95width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <h1 class="cardHeader">FULL MATCH REPLAYS</h1>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="80%" class="mobile90width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p><span class="cardText">Don’t miss a moment of the action. Watch full match replays of every first team fixture.</span></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="50%" src="https://i.ibb.co/TWJhRZw/button.png" alt="button" border="0" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of card -->
+                  <!-- Spacer Start -->
+                  <tr>
+                    <td height="15" style="line-height: 15px; font-size: 15px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                  </tr>
+                  <!-- Spacer End -->
+                  <!-- Start of card -->
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="90%" border="0" cellspacing="0" cellpadding="0" style="background-color: white">
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="100%" src="https://i.ibb.co/q9gJQP5/behind-the-scenes-image.png" alt="behind-the-scenes-image" border="0" /> </a>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="15" style="line-height: 15px; font-size: 15px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="90%" class="mobile95width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <h1 class="cardHeader">BEHIND THE SCENES ACCESS + INTERVIEWS</h1>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="80%" class="mobile90width" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <p><span class="cardText">Watch highlights from first team training, plus exclusive interviews with Klopp and the players.</span></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <a href="https://www.sky.com/"><img width="50%" src="https://i.ibb.co/TWJhRZw/button.png" alt="button" border="0" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of card -->
+                  <!-- Spacer Start -->
+                  <tr>
+                    <td height="10" style="line-height: 10px; font-size: 10px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                  </tr>
+                  <!-- Spacer End -->
+                </table>
+              </td>
+            </tr>
+            <!-- End of card section containing row -->
+            <!-- Start of footer containing row -->
+            <tr>
+              <td align="center" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <!-- Start of content row -->
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <a href="https://www.sky.com/"><img width="300" class="mobileLogo" src="https://i.ibb.co/Jyy16BH/SKY-LFC.png" alt="SKY-LFC" border="0" /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: 2px solid #f3aeb2">
+                              <tr>
+                                <td></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                         
+                        <!-- Start of footer links -->
+                        <tr>
+                          <td class="footer" align="center" valign="top">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td class="footerLinks" align="center" valign="top">
+                                        <a class="footerLink" href="https://www.sky.com/">Privacy Policy</a> <span>|</span>
+                                        <a class="footerLink" href="https://www.sky.com/">Terms and Conditions</a>
+                                        <span>|</span>
+                                        <a class="footerLink" href="https://www.sky.com/">Unsubscribe</a>
+                                        <a class="footerLink" href="https://www.sky.com/">Contact us</a>
+                                        <span>|</span>
+                                        <a class="footerLink" href="https://www.sky.com/">Log in to My Sky</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- Spacer Start -->
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <tr>
+                                <td align="center" valign="top">
+                                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td class="footerText" align="center" valign="top">
+                                        <p>
+                                          <span
+                                            >This newsletter is sent to Sky TV customers as part of the Sky TV service to give you information about new or upcoming content available with
+                                            your subscription.
+                                          </span>
+                                        </p>
+                                        <p><a class="unsub" href="https://www.sky.com/">I don't want these newsletters</a></p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- Spacer Start -->
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="line-height: 10px; font-size: 10px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <!-- Start of footer Text -->
+                              <tr>
+                                <td class="footerLinks" align="center" valign="top">
+                                  <p>
+                                    <span>This email was sent to <span>&lt;</span>recipients email<span>&gt;</span>.</span>
+                                  </p>
+                                  <p>Please add <span>&lt;</span>Sky from address.com<span>&gt;</span> to your address book or safe sender list.</p>
+                                </td>
+                              </tr>
+                              <!-- Spacer Start -->
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <tr>
+                                <td class="footerLinks" align="center" valign="top">
+                                  <p>2021 Sky UK Ltd. Sky UK Ltd (company no. 02‌906‌991) has its registered office at Grant Way, Isleworth, Middlesex TW7 5QD.</p>
+                                </td>
+                              </tr>
+                              <!-- Spacer Start -->
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                              </tr>
+                              <!-- Spacer End -->
+                              <tr>
+                                <td class="footerLinks" align="center" valign="top">
+                                  <p>To unsubscribe from future marketing mailings please log in to My Sky - My details with your Sky iD and select your communication preferences.</p>
+                                </td>
+                              </tr>
+
+                              <!-- End of footer Text -->
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- End of footer links -->
+                        <!-- Spacer Start -->
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px"><img src="https://img.spacergif.org/v1/spacer.gif" aria-hidden="true" alt="" /></td>
+                        </tr>
+                        <!-- Spacer End -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of content row -->
+                </table>
+              </td>
+            </tr>
+
+            <!-- End of footer containing row -->
+          </table>
+          <!-- End of Content -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
